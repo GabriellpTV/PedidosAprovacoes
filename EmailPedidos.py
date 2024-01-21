@@ -10,7 +10,8 @@ def EmailPedidos():
         mail.Subject = assunto
         mail.Body = corpo
         mail.Attachments.Add(anexo)
-        mail.Send()
+        mail.Send() 
+        
 
     diretorio_pedidos = os.path.join(os.getcwd(), f'Pedidos_Enviados_{datetime.now().strftime("%d%m%Y")}')
 

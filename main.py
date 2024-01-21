@@ -57,6 +57,6 @@ text_label2.pack(pady=10)
 button = Button(root, text="Inserir Planilha", command=selecionar_planilha)
 button.pack(pady=10)
 
-button2 = Button(root, text="Iserir Novamente", command=selecionar_planilha)
+button2 = Button(root, text="Inserir Novamente", command=selecionar_planilha)
 
 root.mainloop()
