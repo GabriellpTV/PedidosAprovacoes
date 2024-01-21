@@ -1,8 +1,5 @@
 from Imports import *
 
-from tkinter import Tk, Label, Button, filedialog
-import os
-
 def Fechar():
     root.destroy()
 
@@ -25,8 +22,7 @@ def AtualizarTela(file_path):
 
     text_label2.config(text="Deseja Enviar o e-mail de aprovações?")
     button.config(text="Enviar", command=lambda: EnvioEmail())
-
-    
+    button2.destroy()
 
 def selecionar_planilha():
     file_path = filedialog.askopenfilename(title="Selecione uma planilha", filetypes=[("Arquivos Excel", "*.xlsx;*.xls")])
@@ -35,6 +31,7 @@ def selecionar_planilha():
         text_label.config(text=f"Planilha selecionada:\n \n{nome_arquivo}")
         text_label2.config(text="Deseja continuar?")
         button.config(text="Continuar", command=lambda: AtualizarTela(file_path))
+        button2.pack(pady=10)
 
 root = Tk()
 root.title('Cobrar Aprovações')
@@ -59,5 +56,7 @@ text_label2.pack(pady=10)
 
 button = Button(root, text="Inserir Planilha", command=selecionar_planilha)
 button.pack(pady=10)
+
+button2 = Button(root, text="Iserir Novamente", command=selecionar_planilha)
 
 root.mainloop()

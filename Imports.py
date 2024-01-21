@@ -8,8 +8,9 @@ from win32com.client import Dispatch
 from tkinter import filedialog
 from tkinter import *
 import tkinter as tk
+from tkinter import Tk, Label, Button, filedialog
 
 # Arquivos
 from EmailPedidos import *
 from CriarLote import *
-from main import *
+# from main import *
