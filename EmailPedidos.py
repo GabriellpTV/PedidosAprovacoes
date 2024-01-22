@@ -5,12 +5,20 @@ def EmailPedidos():
     
     def enviar_email(destinatario, assunto, corpo, anexo):
         outlook = win32.Dispatch('outlook.application')
+
+        oacctouse = None
+        for oacc in outlook.Session.Accounts:
+             if oacc.SmtpAddress == "contasapagar@webmotors.com.br":
+                oacctouse = oacc
+                break
+             
         mail = outlook.CreateItem(0)
+        mail._oleobj_.Invoke(*(64209, 0, 8, 0, oacctouse))
         mail.To = destinatario
         mail.Subject = assunto
         mail.Body = corpo
-        mail.Attachments.Add(anexo)
-        mail.Send() 
+        mail.Send()
+        mail.CC = "contasapagar@webmotors.com.br"
         
 
     diretorio_pedidos = os.path.join(os.getcwd(), f'Pedidos_Enviados_{datetime.now().strftime("%d%m%Y")}')
@@ -33,7 +41,7 @@ def EmailPedidos():
                           "espro.gabriel@webmotors.com.br\n\n" \
                           "Atenciosamente,\n" \
                           "Contas a Pagar"
-                    assunto_email = f"[Automático] Pedidos de Compra - {nome_pessoa} - {datetime.now().strftime('%d-%m-%Y')}"
+                    assunto_email = f"[Automático] Pedidos Pendentes de Aprovação - {datetime.now().strftime('%d-%m-%Y')}"
                     enviar_email(email_destinatario, assunto_email, corpo_email, caminho_arquivo)
 
                     print(f"E-mail enviado para {nome_pessoa}.")
@@ -48,3 +56,5 @@ def EmailPedidos():
 
     else:
         print(f"Diretório {diretorio_pedidos} não encontrado.")
+
+EmailPedidos()
