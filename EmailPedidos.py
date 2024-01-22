@@ -41,6 +41,7 @@ def EmailPedidos():
                           "espro.gabriel@webmotors.com.br\n\n" \
                           "Atenciosamente,\n" \
                           "Contas a Pagar"
+                    
                     assunto_email = f"[Automático] Pedidos Pendentes de Aprovação - {datetime.now().strftime('%d-%m-%Y')}"
                     enviar_email(email_destinatario, assunto_email, corpo_email, caminho_arquivo)
 
