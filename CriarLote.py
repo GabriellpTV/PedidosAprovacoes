@@ -19,7 +19,6 @@ def CriarLote(file_path):
         pedidos_aprovador['Data'] = pedidos_aprovador['Data'].dt.strftime('%d/%m/%Y')
         pedidos_aprovador['Data de Vencimento'] = pedidos_aprovador['Data de Vencimento'].dt.strftime('%d/%m/%Y')
 
-        # Adicione as seguintes linhas para remover as colunas 'Valor líquido' e 'Pendente'
         pedidos_aprovador = pedidos_aprovador.drop(['Valor liquido', 'Pendente'], axis=1)
 
         caminho_saida = pasta_destino / f'{aprovador}.xlsx'
