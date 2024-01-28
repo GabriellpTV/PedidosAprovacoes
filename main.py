@@ -41,7 +41,7 @@ def editar_email():
         print(f"Erro ao abrir o diretório de email: {e}")
 
 def HowToUse():
-    link = "https://github.com/GabriellpTV/PedidosAprovacoes/blob/933894789bb7d0c0fa32c622cf551a51475f6d58/README.md"
+    link = "https://github.com/GabriellpTV/PedidosAprovacoes/blob/main/README.md"
     browser = webbrowser.get()
     browser.open(link)
 
