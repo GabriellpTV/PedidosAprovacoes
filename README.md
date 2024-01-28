@@ -46,6 +46,8 @@
 
 <h2>Enviar E-Mails:</h2>
 
+<img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/e439fb3d-6c71-4575-8628-4bc3510ac599" width="600">
+
 <img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/3e896e35-1f90-4daf-866f-5cc28d507ff2" width="600">
 
 <p>Após os lotes serem criados, eles serão exibidos na tela junto com dois botões: um para voltar e outro para enviar.</p>
