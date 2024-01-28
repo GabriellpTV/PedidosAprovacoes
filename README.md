@@ -25,7 +25,7 @@
 
 <p>Ao acessar a opção de edição de e-mail, uma caixa de diálogo será aberta, permitindo ao usuário selecionar o modelo de e-mail desejado para edição. Ao clicar, ele será redirecionado para o Outlook, onde poderá realizar as alterações necessárias.</p>
 
-<img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/468f08a2-8e09-4955-b476-67bbedcd5d5e" width="600">
+<img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/6da390e6-d519-4d7c-902b-7fc1c96c9ce7" width="600">
 
 <p>Ao acessar a opção de edição de e-mail, uma caixa de diálogo será aberta, permitindo ao usuário selecionar o modelo de e-mail desejado para edição. Em seguida, o Outlook será aberto com o modelo de e-mail selecionado, onde o usuário poderá fazer todas as alterações necessárias.</p>
 <p>Após fazer as alterações desejadas, o usuário deve clicar em "Salvar" e, em seguida, fechar o arquivo. É importante observar que os campos de envio, como Cópia, Assunto e Para, não devem ser preenchidos neste momento.</p>
