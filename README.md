@@ -64,7 +64,7 @@
 
 <img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/d08a35b9-c1f6-40b8-9be8-3f5de09dbc48" width="600">
 
-<p>Se uma mensagem como a mencionada acima aparecer, basta clicar em "Enviar" mesmo assim. Isso ocorre devido ao envio dos e-mails ser feito via script.</p>
+<p>Se uma mensagem como a mencionada acima aparecer, basta clicar em "Enviar mesmo assim". Isso ocorre devido ao envio dos e-mails ser feito via script.</p>
 
 <img src="https://github.com/GabriellpTV/PedidosAprovacoes/assets/138072118/1b14a453-bf6f-4f4c-a783-bb803f3a511f" width="600">
 
