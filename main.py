@@ -41,7 +41,7 @@ def editar_email():
         print(f"Erro ao abrir o diretório de email: {e}")
 
 def HowToUse():
-    link = "https://github.com/GabriellpTV/PedidosAprovacoes?tab=readme-ov-file#bot-de-envio-e-cria%C3%A7%C3%A3o-de-lotes-da-tesouraria"
+    link = "https://github.com/GabriellpTV/PedidosAprovacoes/blob/main/README.md"
     browser = webbrowser.get()
     browser.open(link)
 
