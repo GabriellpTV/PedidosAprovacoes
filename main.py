@@ -13,7 +13,7 @@ def Configurar():
 
 def Voltar():
     title_label.config(text="Bem-vindo(a) ao bot de cobrança para aprovações pendentes!")
-    text_label.config(text="Para que o envio dos emails seja feito, primeiro insira a \nplanilha com os pedidos de compra na qual você deseja trabalhar.")
+    text_label.config(text="Para que o envio dos e-mails seja feito, primeiro insira a \nplanilha com os pedidos de compra na qual você deseja trabalhar.")
     button.config(text="Inserir Planilha", command=lambda: selecionar_planilha())
     try:
         button2.pack_forget()
@@ -94,10 +94,10 @@ x = (screen_width - window_width) // 2
 y = (screen_height - window_height) // 2
 root.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-title_label = Label(root, text="Bem-vindo(a) ao bot de cobrança para aprovações pendentes!")
+title_label = Label(root, text="Este é o bot de cobrança para aprovações pendentes!")
 title_label.pack(pady=10)  
 
-text_label = Label(root, text="Para que o envio dos emails seja feito, primeiro insira a \nplanilha com os pedidos de compra na qual você deseja trabalhar.")
+text_label = Label(root, text="Para que o envio dos e-mails seja feito, primeiro insira a \nplanilha com os pedidos de compra na qual você deseja trabalhar.")
 text_label.pack(pady=10)  
 
 text_label2 = Label(root, text="") 
